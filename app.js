@@ -16,7 +16,7 @@ const inquirerValidate = input => {
 // Array of questions (formatted for Inquirer) to ask user.
 const questions = [
     {type: 'list', name: 'license', message: "Please choose a license for your project.", choices: [
-        "Apache 2.0", "MIT", "GPL 3.0", "BSD 3.0", "LGPL 2.1", "None"
+        "Apache 2.0", "MIT", "GPL 3.0", "BSD 3.0", "Creative Commons 1.0", "None"
     ]},
     {type: 'checkbox', name: 'language', message: "What languages were used to build your project?", choices: [
         "HTML", "CSS", "JavaScript", "TypeScript", "Python", "C#", "C", "C++", "Ruby", "Java", "Shell", "Solidity"
