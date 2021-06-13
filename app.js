@@ -35,29 +35,8 @@ const questions = [
 ];
 
 const promptQuestions = () => {
-    return inquirer.prompt(questions
-        // {
-        //     //project deployed?
-        //     type: 'confirm',
-        //     name: 'deployment',
-        //     message: questions[2].prompt,
-        //     default: true
-        // },
-        // {
-        //     //deployment link
-        //     type: 'input',
-        //     name: 'deploymentLink',
-        //     message: questions[3].prompt,
-        //     when: ({ deployment }) => {
-        //         if(deployment){
-        //             return true;
-        //         }
-        //         else{
-        //             return false;
-        //         }
-        //     }
-        // },
-    ).then(answers => {
+    return inquirer.prompt(questions)
+    .then(answers => {
         return answers;
     });
 };
@@ -65,7 +44,6 @@ const promptQuestions = () => {
 // Function call to initialize app when node app is run
 promptQuestions()
     .then(answers => {
-        console.log(answers);
         //pass answers to generate markdown function to generate the markdown syntax for the readme
         return generateMarkdown(answers);
     })
