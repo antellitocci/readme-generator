@@ -46,20 +46,37 @@ const licenseArr = [
 
 //language information array
 const languageArr = [
-
+  {name: "HTML", badge: `<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>`},
+  {name: "CSS", badge: `<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>`},
+  {name: "JavaScript", badge:`<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>`},
+  {name: "TypeScript", badge:`<img alt="TypeScript" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>`},
+  {name: "Python", badge:`<img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/>`},
+  {name: "C#", badge:`<img alt="C#" src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"/>`},
+  {name: "C", badge:`<img alt="C" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"/>`},
+  {name: "C++", badge:`<img alt="C++" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>`},
+  {name: "Ruby", badge:`<img alt="Ruby" src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white"/>`},
+  {name: "Java", badge:`<img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>`},
+  {name: "Shell", badge:`<img alt="Shell Script" src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"/>`}
 ];
+
+//function to generate the markdown for the README file
 const generateMarkdown = projectData => {
     //create variables from projectData
-    console.log(projectData);
     const { license, title, language, description, installation, usage, contributing, tests, github, email, questions } = projectData;
     return `# ${title}
 ${renderLicenseBadge(license)}
 
+---
+
 ## Description\n
 ${description}
 
+---
+
 ## Built With
-${language}
+${renderLanguageBadges(language)}
+
+---
 
 ## Table of Contents
 
@@ -70,22 +87,34 @@ ${language}
 * [Tests](#tests)
 * [Questions](#questions)
 
+---
+
 ## Installation
 ${installation}
+
+---
 
 ## Usage
 ${usage}
 
+---
+
 ## Contributing
 ${contributing}
 
+---
+
 ## Tests
 ${tests}
+
+---
 
 ## Questions
 ${questions}
 ${email}
 [${github}](https://github.com/${github})
+
+---
 
 ${renderLicenseInfo(license, github)}
   `;
@@ -109,7 +138,7 @@ function renderLicenseInfo(license, github) {
       return `
         \n## License
         \n### ${license}
-        \nCopyright ${thisYear} ${github}
+        \n### Copyright ${thisYear} ${github}
         \n${licenseArr[i].content}
       `;
     }
@@ -120,5 +149,19 @@ function renderLicenseInfo(license, github) {
     }
   }
 };
+
+//get language badges
+function renderLanguageBadges(languages){
+  //filter the selected languages against the language badge array
+  let matches = languageArr.filter(element => languages.includes(element.name))
+  .map(( { name, badge }) =>{
+    //generate badge links for markdown
+    return `
+    \n${badge}
+    `;
+  }).join('');
+  //return the matches to be added to the markdown file
+  return matches;
+};  
 
 module.exports = generateMarkdown;
