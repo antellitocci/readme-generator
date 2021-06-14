@@ -20,9 +20,9 @@ This is an example README generated using the README Generator application.
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [License](#license)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license)
 
 
 ## Installation
