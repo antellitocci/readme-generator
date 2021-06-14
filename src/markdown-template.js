@@ -83,9 +83,9 @@ ${renderLanguageBadges(language)}
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [License](#license)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license)
 
 ---
 
@@ -111,8 +111,8 @@ ${tests}
 
 ## Questions
 ${questions}
-${email}
-[${github}](https://github.com/${github})
+\nEmail: ${email}
+\nGitHub: [${github}](https://github.com/${github})
 
 ---
 
