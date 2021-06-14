@@ -4,15 +4,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
       
 
----
-
 ## Description
 
 A node.js application designed to generate a professional quality README for a user. The user will be prompted with a series of questions about their project and a well-formatted README will be created from their responses.
 
 This README was created using the README Generator. To see another example README. [Go Here](./dist/Example-README.md)
 
----
 
 ## Built With
     
@@ -20,8 +17,6 @@ This README was created using the README Generator. To see another example READM
 
 <img alt="NodeJS" src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"/>
 
-
----
 
 ## Table of Contents
 
@@ -32,12 +27,10 @@ This README was created using the README Generator. To see another example READM
 * [Additional Thoughts](#additional-thoughts)
 * [License](#license)
 
----
 
 ## Installation
 To install the README generator, download or clone the hosting repository. Once downloaded / cloned, navigate to the directory where it is located using the command line. Once in that directory, run "npm install" in the command line. After the "npm install" has finished, run "node app" to start the application. You will be presented with questions about your application. Answer these and at the end you will provided a "README Generated!" message. The README that is created will be located in the "dist" folder of the application.
 
----
 
 ## Usage
 Please review the installation instructions above for getting started with the application. The video linked below also provides a walkthrough explaining how to get the application up and running as well as how to generate the README.
@@ -45,7 +38,6 @@ Please review the installation instructions above for getting started with the a
 ### How To: Install and Run the Application
 [Video Guide](https://drive.google.com/file/d/1D1u_lZ24uYxOzMjT-CWM1vKbaS1ASFeW/view)
 
----
 
 ## Questions
 If you have questions about this project, please contact me via one of the methods listed below:
@@ -54,7 +46,6 @@ Email: andrew@tellitocci.com
 
 GitHub: [antellitocci](https://github.com/antellitocci)
 
----
 
 ## Credits
 
@@ -62,7 +53,6 @@ Language Badges: [markdown-badges](https://github.com/Ileriayo/markdown-badges)
 
 License Badges: [license-badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
----
 
 ## Additional Thoughts
 
@@ -72,7 +62,6 @@ For future development, we would consider:
 * Allowing for more customization of sections included.
 * Allowing users to add additional languages or licenses not included in the base application.
 
----
 
 ## License
         

@@ -66,17 +66,14 @@ const generateMarkdown = projectData => {
     return `# ${title}
 ${renderLicenseBadge(license)}
 
----
 
 ## Description\n
 ${description}
 
----
 
 ## Built With
 ${renderLanguageBadges(language)}
 
----
 
 ## Table of Contents
 
@@ -87,34 +84,28 @@ ${renderLanguageBadges(language)}
 * [Questions](#questions)
 * [License](#license)
 
----
 
 ## Installation
 ${installation}
 
----
 
 ## Usage
 ${usage}
 
----
 
 ## Contributing
 ${contributing}
 
----
 
 ## Tests
 ${tests}
 
----
 
 ## Questions
 ${questions}
 \nEmail: ${email}
 \nGitHub: [${github}](https://github.com/${github})
 
----
 
 ${renderLicenseInfo(license, github)}
   `;
