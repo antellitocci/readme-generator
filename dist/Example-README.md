@@ -4,21 +4,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
       
 
----
-
 ## Description
 
 This is an example README generated using the README Generator application.
 
----
 
 ## Built With
 
     
 <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
     
-
----
 
 ## Table of Contents
 
@@ -29,27 +24,22 @@ This is an example README generated using the README Generator application.
 * [Tests](#tests)
 * [Questions](#questions)
 
----
 
 ## Installation
 To install the README generator, download or clone the hosting repository. Once downloaded / cloned, navigate to the directory where it is located using the command line. Once in that directory, run "npm install" in the command line. After the "npm install" has finished, run "node app" to start the application. You will be presented with questions about your application. Answer these and at the end you will provided a "README Generated!" message. The README that is created will be located in the "dist" folder of the application.
 
----
 
 ## Usage
 This is where you would be instructions for your project's use.
 
----
 
 ## Contributing
 This is where you would put guidelines for contributing to your project.
 
----
 
 ## Tests
 This is where you would put tests you've written for your project or guidelines for writing tests for your project.
 
----
 
 ## Questions
 This is where you would put instructions for users to contact you with questions about the application.
@@ -57,9 +47,6 @@ This is where you would put instructions for users to contact you with questions
 Email: andrew@tellitocci.com
 
 GitHub: [antellitocci](https://github.com/antellitocci)
-
----
-
 
         
 ## License
